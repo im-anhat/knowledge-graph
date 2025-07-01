@@ -53,7 +53,7 @@ python blink/crossencoder/train_cross.py \
 #   --max_context_length 64 \
 #   --max_cand_length 128 \
 #   --data_path data/bc5cdr/blink_format \
-#   --output_path models/ncbi \
+#   --output_path models/bc5cdr \
 #   --encode_batch_size 8 --eval_batch_size 1 --top_k 64 --save_topk_result \
 #   --bert_model bert-large-uncased --mode train,test,valid
 
