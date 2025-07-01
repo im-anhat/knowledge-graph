@@ -34,7 +34,8 @@ python blink/crossencoder/train_cross.py \
   --learning_rate 2e-05 \
   --num_train_epochs 5 \
   --max_context_length 64 \
-  --max_cand_length 192 \
+  --max_cand_length 128 \
+  --max_seq_length 192 \
   --train_batch_size 2 \
   --eval_batch_size 2 \
   --bert_model bert-large-uncased \
