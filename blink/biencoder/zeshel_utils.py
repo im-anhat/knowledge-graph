@@ -12,7 +12,8 @@ import torch
 DOC_PATH = "data/zeshel/documents/"
 
 WORLDS = [
-    'ncbi',
+    # 'ncbi',
+    'bc5cdr',
     'american_football',
     'doctor_who',
     'fallout',

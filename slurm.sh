@@ -62,6 +62,7 @@ export PYTHONPATH=.
 
 
 # Always use 128 for candidate length, change context length + top64 directory location only
+# change entity dict, cand encodings, data path, output path, zeshel util world
 python blink/biencoder/eval_biencoder.py \
   --path_to_model models/biencoder_wiki_large.bin \
   --entity_dict_path data/bc5cdr/blink_format/kb.jsonl \
@@ -69,7 +70,7 @@ python blink/biencoder/eval_biencoder.py \
   --max_context_length 64 \
   --max_cand_length 128 \
   --data_path data/bc5cdr/blink_format \
-  --output_path models/ncbi \
+  --output_path models/bc5cdr \
   --encode_batch_size 8 --eval_batch_size 1 --top_k 64 --save_topk_result \
   --bert_model bert-large-uncased --mode train,test,valid
 
