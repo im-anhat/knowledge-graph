@@ -48,11 +48,11 @@ python blink/crossencoder/train_cross.py \
 # Always use 128 for candidate length, change context length + top64 directory location only
 # python blink/biencoder/eval_biencoder.py \
 #   --path_to_model models/biencoder_wiki_large.bin \
-#   --entity_dict_path data/ncbi/blink_format/prime_def/kb.jsonl \
-#   --cand_encode_path models/ncbi/original_def_encodings_128.t7 \
-#   --max_context_length 32 \
+#   --entity_dict_path data/bc5cdr/blink_format/kb.jsonl \
+#   --cand_encode_path models/bc5cdr/original_def_encodings_64.t7 \
+#   --max_context_length 64 \
 #   --max_cand_length 128 \
-#   --data_path data/ncbi/blink_format/prime_def \
+#   --data_path data/bc5cdr/blink_format \
 #   --output_path models/ncbi \
 #   --encode_batch_size 8 --eval_batch_size 1 --top_k 64 --save_topk_result \
 #   --bert_model bert-large-uncased --mode train,test,valid
